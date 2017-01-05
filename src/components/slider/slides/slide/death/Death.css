@@ -1,0 +1,166 @@
+.death {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.death > div {
+  flex: 1 1 45%;
+  text-align: center;
+  margin-right: 4rem;
+}
+
+.death > div h1 {
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+}
+
+.death p {
+  font-size: 1.5rem;
+  color: hsla(0, 0%, 100%, .5);
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.death .death-candidates {
+  flex: 1 1 55%;
+}
+
+.death-title-sub {
+  color: hsla(0, 0%, 100%, .2);
+  font-size: 13rem;
+  line-height: 1;
+}
+
+.death-title-main {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.7rem;
+}
+
+.death-candidates-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.death-candidates-list li {
+  width: 33.33%;
+  font-size: 1.1rem;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #fff;
+}
+
+.death-candidates-list li > a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.death-candidates-list .death-candidate-image {
+  width: 9rem;
+}
+
+.death-candidate-image {
+  overflow: hidden;
+  border-radius: 2px;
+  background-position: 50%;
+  background-size: cover;
+  background-color: #d3d3d3;
+}
+
+.death-candidate-image:before {
+  content: '';
+  float: left;
+  margin-top: 123%;
+}
+
+.death-candidate-name {
+  margin-top: .6rem;
+}
+
+.death-candidate-name span {
+  display: block;
+  white-space: nowrap;
+  line-height: 1.36;
+}
+
+.death-candidate-info {
+  width: 100%;
+  font-size: .95rem;
+}
+
+@media only screen and (max-width: 1366px) {
+  .death-candidates-list .death-candidate-image {
+    width: 7.2rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .death {
+    margin: 0 1.5rem;
+    max-width: 100%;
+  }
+
+  .death > div {
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .death-title-sub {
+    font-size: 10rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .death {
+    flex-wrap: wrap;
+  }
+
+  .death > * {
+    width: 100%;
+  }
+
+  .death > div {
+    margin-right: 0;
+    padding: 0 1.5rem 1.5rem;
+  }
+
+  .death .death-candidates {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .death .death-candidates > ul {
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 1.5rem;
+  }
+
+  .death .death-candidates > ul > li {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .death-candidates-list {
+    flex-wrap: nowrap;
+  }
+
+  .death-candidates-list li {
+    width: auto;
+    margin-right: 1rem;
+  }
+
+  .death-candidate-name span {
+    white-space: normal;
+    width: 7.2rem;
+  }
+}

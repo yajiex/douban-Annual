@@ -1,0 +1,97 @@
+body {
+  background: #000;
+}
+
+html {
+  font-size: 75%;
+
+  /* Apple's new system font
+   */
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, PingFang SC, Hiragino Sans GB, STHeiti, Microsoft Yahei, Wenquanyi Micro Hei, sans-serif;
+}
+
+html, body {
+  cursor: default;
+  padding: 0;
+  margin: 0;
+}
+
+body, button, input {
+  font-size: 13px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, li, ol, p, ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.33rem;
+}
+
+button {
+  -webkit-appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  white-space: normal;
+  outline: 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+li, ol, ul {
+  list-style: none;
+}
+
+#app, [data-reactroot], body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+[class*=icon-] {
+  display: flex;
+  align-items: center;
+}
+
+[class*=icon-]:before {
+  width: 1em;
+  height: 1em;
+  margin-right: .5em;
+  content: '';
+
+  /*
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  */
+  background: 50%/cover no-repeat;
+}
+
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 60%;
+  }
+
+  body, button, input {
+    font-size: 12px;
+  }
+}

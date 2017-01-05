@@ -1,0 +1,50 @@
+.content {
+  width: 100%;
+  display: flex;
+}
+
+.content-reverse, .content-reverse .content-main-wrapper {
+  flex-direction: row-reverse;
+}
+
+.content-left {
+  flex: 1;
+}
+
+.content-main-wrapper {
+  flex: 0 1 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.content-reverse .content-main {
+  padding: 2rem 0 2rem 3rem;
+}
+
+.content-main {
+  padding: 2rem 3rem 2rem 0;
+  width: 25rem;
+}
+
+.content-right {
+  flex: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .content-reverse .content-main {
+    padding: 2rem 3rem 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .content-reverse .content-main {
+    padding: 1.5rem;
+  }
+
+  .content-main {
+    padding: 1.5rem;
+    width: 50%;
+  }
+}

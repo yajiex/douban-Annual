@@ -1,0 +1,128 @@
+.winner {
+  max-width: 23em;
+}
+
+.winner-no-rating:last-child, .winner-no-rating > span {
+  margin-lfet: 0;
+}
+
+.winner-name {
+  font-size: 2.26rem;
+  font-weight: 700;
+}
+
+.winner-director, .winner-rater {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+.winner-rater {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.winner-counter {
+  color: hsla(0, 0%, 100%, .6);
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.winner-counter > a:before {
+  content: '\2014\2014';
+  padding: 0 .5em;
+}
+
+.winner-rater > span {
+  margin-right: 1rem;
+}
+
+.react-rater {
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-right: .5rem;
+  display: inline-block;
+}
+
+.react-rater.is-disabled a {
+  cursor: default;
+}
+
+.react-rater a.is-active, .react-rater a.will-be-active {
+  color: #fff;
+}
+
+.react-rater a {
+  cursor: pointer;
+  color: hsla(0, 0%, 100%, .3);
+  position: relative;
+}
+
+.react-rater a.is-active-half:before {
+  color: #fff;
+  content: '\2605';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+@media (max-height: 800px) {
+  .winner-name {
+    font-size: 1.88rem;
+  }
+
+  .winner-director, .winner-rater {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .winner-counter {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-height: 700px) {
+  .winner-name {
+    font-size: 1.7rem;
+  }
+
+  .winner-director, .winner-rater {
+    font-size: 1rem;
+    margin-top: .5rem;
+  }
+
+  .winner-counter {
+    font-size: 1rem;
+  }
+
+  .react-rater {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .winner-name {
+    font-size: 1.6rem;
+  }
+
+  .winner {
+    max-width: 15em;
+  }
+
+  .winner-director, .winner-rater {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .react-rater {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .winner {
+    max-width: 12em;
+  }
+}

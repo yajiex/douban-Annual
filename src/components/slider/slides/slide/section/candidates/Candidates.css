@@ -1,0 +1,63 @@
+.candidates {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.candidates-list {
+  white-space: nowrap;
+}
+
+.candidates-list svg[data-def] {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+.candidates-list li {
+  white-space: normal;
+  width: 86px;
+  color: #494949;
+  display: inline-block;
+  position: relative;
+}
+
+.candidates-list li + li {
+  margin-left: 18.2px;
+}
+
+.candidates-list li a {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 20px;
+  color: #494949;
+}
+
+@media only screen and (max-width: 1024px) {
+  .candidates {
+    box-sizing: border-box;
+    overflow: auto;
+  }
+
+  .candidates-list {
+    display: inline-block;
+    padding: 0 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .candidates {
+    display: initial;
+  }
+
+  .candidates li {
+    transform: scale(.9);
+  }
+
+  .candidates li + li {
+    margin-left: 15px;
+  }
+}

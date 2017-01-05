@@ -1,0 +1,99 @@
+.cover {
+  height: 100%;
+  display: flex;
+
+  /* The flex-wrap property specifies whether the flexible items should wrap or not.
+  wrap: Specifies that the flexible items will wrap if necessary
+   */
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  /* The align-content property modifies the behavior of the flex-wrap property. It is similar to align-items, but
+  instead of aligning flex items, it aligns flex lines.
+  center: Lines are packed toward the center of the flex container
+   */
+  align-content: center;
+}
+
+.cover:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .6);
+  z-index: 1;
+}
+
+.cover-background {
+  z-index: 0;
+}
+
+.cover-background, .cover-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cover-background video {
+  z-index: 1;
+}
+
+.cover-title {
+  margin-top: -10px;
+}
+
+.cover h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 3.7rem;
+}
+
+.cover h1 img {
+  height: 45vh;
+  max-height: 32rem;
+}
+
+.cover-description {
+  width: 100%;
+  color: hsla(0, 0%, 100%, .8);
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.cover-description div {
+  max-width: 800px;
+  padding: 3rem;
+  margin: 0 auto;
+  opacity: .75;
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .cover-background video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .slide-wrapper {
+    padding: 40px 0 50px;
+  }
+
+  .cover h1 {
+    font-size: 2.8rem;
+  }
+
+  .cover-description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+

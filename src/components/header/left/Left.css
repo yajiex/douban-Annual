@@ -1,0 +1,39 @@
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.header-left a img {
+  width: 15px;
+  height: 15px;
+  margin-right: .5rem;
+  vertical-align: middle;
+}
+
+.header-left-sub-title {
+  margin-left: .5rem;
+}
+
+.header-left-share-wrapper {
+  margin-left: .5rem;
+  padding-left: .5rem;
+  border-left: 1px solid #fff;
+}
+
+.header-left-share {
+  position: relative;
+}
+
+.header-left-share > span {
+  cursor: pointer;
+}
+
+.header-left-counter {
+  margin-left: .5rem;
+}

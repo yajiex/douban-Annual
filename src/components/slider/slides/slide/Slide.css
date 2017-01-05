@@ -1,0 +1,60 @@
+.slide {
+  height: 100%;
+}
+
+.slide-background {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  color: #fff;
+
+  /*
+  background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  */
+  background: #000 50%/cover;
+
+  z-index: 0;
+}
+
+.slide-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 60px 0 80px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.slide-wrapper h1 {
+  font-weight: 400;
+}
+
+.slide-wrapper h1,
+.slide-wrapper h2,
+.slide-wrapper h3,
+.slide-wrapper h4,
+.slide-wrapper h5 {
+  /* http://maxvoltar.com/archive/-webkit-font-smoothing
+   */
+  -webkit-font-smoothing: antialiased;
+
+  /* The `text-rendering` CSS property provides information to the rendering engine about what to optimize for when
+  rendering text.
+  optimizelegibility: The browser emphasizes legibility over rendering speed and geometric precision. This enables
+  kerning and optional ligatures.
+   */
+  text-rendering: optimizelegibility;
+}
+
+@media only screen and (max-width: 414px) {
+  .slide-wrapper {
+    padding: 40px 0 50px;
+  }
+}

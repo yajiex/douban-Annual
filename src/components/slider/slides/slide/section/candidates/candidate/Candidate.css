@@ -1,0 +1,59 @@
+.candidate {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 20px;
+  color: #494949;
+}
+
+.candidate .candidate-name {
+  background: rgba(0, 0, 0, .5);
+  color: #fff;
+}
+
+.candidate-num {
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background: inherit;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg) translate(-50%, -50%);
+  transform-origin: top left;
+}
+
+.candidate-num span {
+  transform: rotate(-45deg);
+  color: #fff;
+}
+
+.candidate-num:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  bottom: -7px;
+  right: 0;
+  width: 1px;
+  background: #fff;
+}
+
+.candidate-poster {
+  width: 86px;
+  height: 122px;
+}
+
+.candidate-name {
+  padding: 5px 8px;
+  line-height: 17px;
+  width: 100%;
+  height: 34px;
+}
+
+.candidate-rating {
+  color: #f6a623;
+  display: inline-block;
+}

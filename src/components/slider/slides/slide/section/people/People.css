@@ -1,0 +1,35 @@
+.people {
+  padding: 2rem 3rem 2rem 0;
+}
+
+.people h1 {
+  font-size: 3rem;
+  padding-bottom: .8em;
+  border-bottom: 1px solid #fff;
+  margin-bottom: .8em;
+}
+
+.people h2 {
+  font-weight: 700;
+  font-size: 2.26rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .people {
+    padding: 2rem 3rem 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .people {
+    padding: 1.5rem;
+  }
+
+  .people h1 {
+    font-size: 1.8rem;
+  }
+
+  .people h2 {
+    font-size: 1.6rem;
+  }
+}

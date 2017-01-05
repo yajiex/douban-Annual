@@ -1,0 +1,26 @@
+.header {
+  position: absolute;
+  max-width: 1024px;
+  width: 100%;
+  top: 8px;
+
+  /* To center an element horizontally */
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* The keyword `only` can be used to hide style sheets from older user agents. User agents must process media queries
+starting with `only` as if the `only` keyword was not present.
+ */
+@media only screen and (max-width: 1024px) {
+  .header {
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+  }
+}

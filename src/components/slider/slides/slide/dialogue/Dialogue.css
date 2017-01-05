@@ -1,0 +1,61 @@
+.dialogue {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  position: relative;
+  bottom: -80px;
+}
+
+.dialogue-main {
+  color: #000;
+  background: #fff;
+  padding-bottom: 80px;
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.dialogue-content {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: STFangsong, Fangsong, FangSong_GB2312, STSong, serif;
+}
+
+.dialogue-content > * {
+  width: 100%;
+}
+
+.dialogue-words {
+  font-size: calc(2rem + 3 * (100vw - 414px) / 952);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.dialogue-source {
+  text-align: right;
+  font-size: calc(1.3rem + 2.7 * (100vw - 414px) / 952);
+  margin-top: 1.5rem;
+}
+
+.dialogue-source :before {
+  content: '\2014\2014';
+}
+
+@media only screen and (max-width: 1024px) {
+  .dialogue-content {
+    padding: 0 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .dialogue-main {
+    padding-top: 2.5rem;
+  }
+
+  .dialogue-words {
+    text-align: left;
+  }
+}
