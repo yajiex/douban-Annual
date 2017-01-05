@@ -2,6 +2,10 @@
 
 This project is a copy of [豆瓣2016年度电影榜单](https://movie.douban.com/annual2016/). I write it for the purpose of practicing frontend development, especially React.
 
+## Demo
+
+https://doubanannual.oldoldb.com
+
 ## Getting Started
 
 1. Clone: `git clone https://github.com/yajiex/douban-Annual.git`
