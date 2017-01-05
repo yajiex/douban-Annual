@@ -24,7 +24,9 @@ This project is a copy of [豆瓣2016年度电影榜单](https://movie.douban.co
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+**If there are any license issue, please contact me via [issues](https://github.com/yajiex/douban-Annual/issues/new)**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
