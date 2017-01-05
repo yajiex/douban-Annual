@@ -56,7 +56,7 @@ export default class Slide extends React.Component {
     return (
       <div className="slide">
         <div className="slide-background"
-             style={{ backgroundImage: this.props.slideType === "cover" ? "" : `url(${this.props.bgImage})` }}
+             style={{ backgroundImage: (this.props.slideType === "cover" || this.props.slideType === "death") ? "" : `url(${this.props.bgImage})` }}
         >
           <div className="slide-wrapper">
             {innerContent}
