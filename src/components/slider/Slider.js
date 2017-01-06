@@ -8,7 +8,7 @@ const Slider = (props) => (
           onRest={props.updatePageIndex}
   >
     {value =>
-      <div className="Slider"
+      <div className="slider"
            onWheel={props.handleWheel}
            style={{
              transform: `translate3d(0, -${value.y}px, 0)`

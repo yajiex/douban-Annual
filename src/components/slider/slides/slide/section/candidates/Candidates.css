@@ -4,6 +4,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  will-change: scroll-position;
 }
 
 .candidates-list {

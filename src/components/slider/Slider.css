@@ -1,3 +1,4 @@
-.Slider {
+.slider {
   height: 100%;
+  will-change: transform;
 }
