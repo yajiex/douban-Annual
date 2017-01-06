@@ -40,7 +40,7 @@
   .candidates {
     box-sizing: border-box;
     overflow: auto;
-    -webkit-overflow-scrolling: auto;
+    overflow-scrolling: touch;
   }
 
   .candidates-list {
