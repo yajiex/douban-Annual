@@ -59,7 +59,11 @@ export default class App extends Component {
   }
 
   handleTouchMove(e) {
-    e.stopPropagation();
+    const scrollAreas = [].slice.call(document.querySelectorAll("[data-scroll=limited]"));
+    const allowScroll = scrollAreas.some((targets) => targets.contains(e.target));
+    if (!allowScroll) {
+      e.preventDefault();
+    }
     const newTouchY = e.changedTouches[0].clientY;
     this.navigate(this.state.prevPageIndex, newTouchY - this.startTouchY);
   }
