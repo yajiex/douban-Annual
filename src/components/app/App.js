@@ -59,7 +59,7 @@ export default class App extends Component {
   }
 
   handleTouchMove(e) {
-    e.preventDefault();
+    e.stopPropagation();
     const newTouchY = e.changedTouches[0].clientY;
     this.navigate(this.state.prevPageIndex, newTouchY - this.startTouchY);
   }
