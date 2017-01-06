@@ -13,9 +13,13 @@ export default class App extends Component {
     this.handleNavigatorClick = this.handleNavigatorClick.bind(this);
     this.updatePageIndex = this.updatePageIndex.bind(this);
     this.isMobile = this.detectMobile();
+    this.startTouchY = 0;
+    this.SCREEN_HEIGHT = document.documentElement.clientHeight;
+    this.SCROLL_THRESHOLD = this.SCREEN_HEIGHT / 10;
     this.state = {
       prevPageIndex: 0,
-      curPageIndex: 0
+      curPageIndex: 0,
+      scrollHeight: 0,
     };
   }
 
@@ -31,16 +35,38 @@ export default class App extends Component {
         this.navigate(this.state.prevPageIndex + 1);
       }
     });
+
+    document.addEventListener('touchstart', this.handleTouchStart.bind(this));
+    document.addEventListener('touchmove', this.handleTouchMove.bind(this));
+    document.addEventListener('touchend', this.handleTouchEnd.bind(this));
   }
 
   detectMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
   }
 
-  navigate(pageIndex) {
+  navigate(pageIndex, scrollHeight = 0) {
     if ((this.state.prevPageIndex === this.state.curPageIndex) && (pageIndex >= 0) && (pageIndex < this.metaData.length)) {
-      this.setState({ prevPageIndex: pageIndex });
+      this.setState({
+        prevPageIndex: pageIndex,
+        scrollHeight: scrollHeight
+      });
     }
+  }
+
+  handleTouchStart(e) {
+    this.startTouchY = e.changedTouches[0].clientY;
+  }
+
+  handleTouchMove(e) {
+    const newTouchY = e.changedTouches[0].clientY;
+    this.navigate(this.state.prevPageIndex, newTouchY - this.startTouchY);
+  }
+
+  handleTouchEnd() {
+    this.startTouchY = 0;
+    const computedScrollHeight = Math.abs(this.state.scrollHeight) > this.SCROLL_THRESHOLD ? this.state.scrollHeight : 0;
+    this.navigate(this.state.prevPageIndex - Math.sign(computedScrollHeight));
   }
 
   handleWheel(e) {
@@ -66,6 +92,8 @@ export default class App extends Component {
                   pageIndex={this.state.prevPageIndex}
                   updatePageIndex={this.updatePageIndex}
                   handleWheel={this.handleWheel}
+                  scrollHeight={this.state.scrollHeight}
+                  rootHeight={this.SCREEN_HEIGHT}
           />
           <Navigator isMobile={this.isMobile}
                      onClick={this.handleNavigatorClick}
