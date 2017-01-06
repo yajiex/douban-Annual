@@ -3,11 +3,11 @@ import Left from './left/Left';
 import Right from './right/Right';
 import './Header.css';
 
-const Header = () => (
-  <div className="header">
-    <Left />
-    <Right />
-  </div>
+const Header = (props) => (
+  <header className="header">
+    <Left isMobile={props.isMobile}/>
+    <Right isMobile={props.isMobile}/>
+  </header>
 );
 
 export default Header;

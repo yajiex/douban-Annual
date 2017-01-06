@@ -30,6 +30,7 @@ export default class Section extends React.Component {
           <Content bgColor={this.props.winnerBGColor}
                    isReverse={this.props.isReverse}
                    contentType="winner"
+                   isMobile={this.props.isMobile}
                    winnerName={this.props.winnerName}
                    winnerLink={this.props.winnerLink}
                    director={this.props.director}

@@ -4,6 +4,7 @@ import Dialogue from './dialogue/Dialogue';
 import Section from './section/Section';
 import Death from './death/Death';
 import Epilogue from './epilogue/Epilogue';
+import videoBGImage from './p1621.jpg';
 import './Slide.css';
 
 export default class Slide extends React.Component {
@@ -15,7 +16,7 @@ export default class Slide extends React.Component {
     let innerContent = "";
     if (this.props.slideType === 'cover') {
       innerContent = (
-        <Cover/>
+        <Cover isMobile={this.props.isMobile}/>
       );
     } else if (this.props.slideType === "epilogue") {
       innerContent = (
@@ -30,7 +31,8 @@ export default class Slide extends React.Component {
       );
     } else if (this.props.slideType === 'section') {
       innerContent = (
-        <Section isPeopleSection={this.props.isPeopleSection}
+        <Section isMobile={this.props.isMobile}
+                 isPeopleSection={this.props.isPeopleSection}
                  sectionBGColor={this.props.sectionBGColor}
                  isReverse={this.props.isReverse}
                  categoryBGColor={this.props.categoryBGColor}
@@ -53,10 +55,18 @@ export default class Slide extends React.Component {
         <Death candidates={this.props.deathCandidates}/>
       );
     }
+
+    let bgImage = "";
+    if (this.props.slideType === "section" || this.props.slideType === "dialogue" || this.props.slideType === "epilogue") {
+      bgImage = `url(${this.props.bgImage})`;
+    } else if (this.props.slideType === "cover" && this.props.isMobile) {
+      bgImage = `url(${videoBGImage})`;
+    }
+
     return (
       <div className="slide">
         <div className="slide-background"
-             style={{ backgroundImage: (this.props.slideType === "cover" || this.props.slideType === "death") ? "" : `url(${this.props.bgImage})` }}
+             style={{ backgroundImage: bgImage }}
         >
           <div className="slide-wrapper">
             {innerContent}

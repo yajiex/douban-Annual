@@ -6,7 +6,7 @@ const Navigator = (props) => (
           data-tap="true"
           onClick={props.onClick}
   >
-    <div className="icon-down">
+    <div className={props.isMobile ? "icon-next" : "icon-down"}>
     </div>
   </button>
 );

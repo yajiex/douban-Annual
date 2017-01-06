@@ -12,6 +12,7 @@ export default class App extends Component {
     this.handleWheel = this.handleWheel.bind(this);
     this.handleNavigatorClick = this.handleNavigatorClick.bind(this);
     this.updatePageIndex = this.updatePageIndex.bind(this);
+    this.isMobile = this.detectMobile();
     this.state = {
       prevPageIndex: 0,
       curPageIndex: 0
@@ -30,6 +31,10 @@ export default class App extends Component {
         this.navigate(this.state.prevPageIndex + 1);
       }
     });
+  }
+
+  detectMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
   }
 
   navigate(pageIndex) {
@@ -54,13 +59,18 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Header/>
-        <Slider metaData={this.metaData}
-                pageIndex={this.state.prevPageIndex}
-                updatePageIndex={this.updatePageIndex}
-                handleWheel={this.handleWheel}
-        />
-        <Navigator onClick={this.handleNavigatorClick}/>
+        <div className="root">
+          <Header isMobile={this.isMobile}/>
+          <Slider isMobile={this.isMobile}
+                  metaData={this.metaData}
+                  pageIndex={this.state.prevPageIndex}
+                  updatePageIndex={this.updatePageIndex}
+                  handleWheel={this.handleWheel}
+          />
+          <Navigator isMobile={this.isMobile}
+                     onClick={this.handleNavigatorClick}
+          />
+        </div>
       </div>
     );
   }

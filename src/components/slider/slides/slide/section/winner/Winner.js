@@ -30,17 +30,21 @@ const Winner = (props) => {
           {props.director}
         </div>
         {rater}
-        <div className="winner-counter">
-          {props.comment}
-          {
-            props.commentAuthor === "" ? "" : (
-                <a href={props.commentAuthorLink}
-                   target="_blank"
-                >
-                  {props.commentAuthor}
-                </a>)
-          }
-        </div>
+        {
+          props.isMobile ? null : (
+              <div className="winner-counter">
+                {props.comment}
+                {
+                  props.commentAuthor === "" ? "" : (
+                      <a href={props.commentAuthorLink}
+                         target="_blank"
+                      >
+                        {props.commentAuthor}
+                      </a>)
+                }
+              </div>
+            )
+        }
       </div>
     ) : (
       <div className="winner">

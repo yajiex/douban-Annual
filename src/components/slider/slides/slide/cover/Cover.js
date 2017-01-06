@@ -9,8 +9,12 @@ export default class Cover extends React.Component {
   }
 
   render() {
-    return (
-      <div className="cover">
+
+    const innerContent = this.props.isMobile ? (
+        <div className="cover-counter">
+          共 3,603,382 人访问
+        </div>
+      ) : (
         <div className="cover-background">
           <video loop
                  autoPlay
@@ -20,6 +24,10 @@ export default class Cover extends React.Component {
             />
           </video>
         </div>
+      );
+    return (
+      <div className="cover">
+        {innerContent}
         <h1 className="cover-title">
           <img src={image}
                alt="title"

@@ -12,7 +12,8 @@ const Content = (props) => {
     ) :
     props.contentType === "winner" ?
       (
-        <Winner moreInfo={true}
+        <Winner isMobile={props.isMobile}
+                moreInfo={true}
                 winnerName={props.winnerName}
                 winnerLink={props.winnerLink}
                 director={props.director}

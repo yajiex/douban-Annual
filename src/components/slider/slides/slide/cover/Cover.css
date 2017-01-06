@@ -44,6 +44,14 @@
   z-index: 1;
 }
 
+.cover-counter {
+  position: absolute;
+  top: 34px;
+  left: 2rem;
+  margin-left: 15px;
+  z-index: 1
+}
+
 .cover-title {
   margin-top: -10px;
 }

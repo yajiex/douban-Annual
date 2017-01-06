@@ -17,6 +17,7 @@ const Slider = (props) => (
         {
           props.metaData.map((data, index) => (
             <Slide {...data}
+                   isMobile={props.isMobile}
                    key={`slide${index}`}
             />
           ))
