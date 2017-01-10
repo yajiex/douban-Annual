@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React, {Component}  from 'react';
 import Header from '../header/Header';
 import Slider from '../slider/Slider';
 import Navigator from '../navigator/Navigator';
@@ -83,17 +83,20 @@ export default class App extends Component {
   }
 
   updatePageIndex() {
-    this.setState({ curPageIndex: this.state.prevPageIndex });
+    this.setState({curPageIndex: this.state.prevPageIndex});
     location.hash = `#${this.state.curPageIndex}`;
   }
 
   render() {
+    const start = Math.max(0, this.state.prevPageIndex - 1);
+    const end = Math.min(this.state.prevPageIndex + 2, this.metaData.length);
+    const metaData = Array.from({length: this.metaData.length}, (e, i) => (start <= i && i < end) ? this.metaData[i] : null);
     return (
       <div>
         <div className="root">
           <Header isMobile={this.isMobile}/>
           <Slider isMobile={this.isMobile}
-                  metaData={this.metaData}
+                  metaData={metaData}
                   pageIndex={this.state.prevPageIndex}
                   updatePageIndex={this.updatePageIndex}
                   handleWheel={this.handleWheel}

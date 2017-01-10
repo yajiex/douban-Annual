@@ -8,10 +8,6 @@ import videoBGImage from './p1621.jpg';
 import './Slide.css';
 
 export default class Slide extends React.Component {
-  shouldComponentUpdate() {
-    return false;
-  }
-
   render() {
     let innerContent = "";
     if (this.props.slideType === 'cover') {
@@ -53,6 +49,10 @@ export default class Slide extends React.Component {
     } else if (this.props.slideType === "death") {
       innerContent = (
         <Death candidates={this.props.deathCandidates}/>
+      );
+    } else {
+      return (
+        <div className="slide"></div>
       );
     }
 
