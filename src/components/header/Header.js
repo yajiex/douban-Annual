@@ -6,7 +6,13 @@ import './Header.css';
 const Header = (props) => (
   <header className="header">
     <Left isMobile={props.isMobile}/>
-    <Right isMobile={props.isMobile}/>
+    <Right isMobile={props.isMobile}
+           metaData={props.metaData}
+           pageIndex={props.pageIndex}
+           catalogExpand={props.catalogExpand}
+           handleCatalogClick={props.handleCatalogClick}
+           handleCatalogButtonClick={props.handleCatalogButtonClick}
+    />
   </header>
 );
 

@@ -11,6 +11,8 @@ export default class App extends Component {
     this.metaData = metaData().metaData;
     this.handleWheel = this.handleWheel.bind(this);
     this.handleNavigatorClick = this.handleNavigatorClick.bind(this);
+    this.handleCatalogClick = this.handleCatalogClick.bind(this);
+    this.handleCatalogButtonClick = this.handleCatalogButtonClick.bind(this);
     this.updatePageIndex = this.updatePageIndex.bind(this);
     this.isMobile = this.detectMobile();
     this.startTouchY = 0;
@@ -20,6 +22,7 @@ export default class App extends Component {
       prevPageIndex: 0,
       curPageIndex: 0,
       scrollHeight: 0,
+      catalogExpand: false,
     };
   }
 
@@ -70,13 +73,15 @@ export default class App extends Component {
   }
 
   handleTouchMove(e) {
-    const scrollAreas = [].slice.call(document.querySelectorAll("[data-scroll=limited]"));
-    const allowScroll = scrollAreas.some((targets) => targets.contains(e.target));
-    if (!allowScroll) {
+    const scrollAreasVertical = [].slice.call(document.querySelectorAll("[data-scroll=free]"));
+    const touchVerticalScrollArea = scrollAreasVertical.some((targets) => targets.contains(e.target));
+    const scrollAreasHorizontal = [].slice.call(document.querySelectorAll("[data-scroll=limited]"));
+    const touchHorizontalScrollArea = scrollAreasHorizontal.some((targets) => targets.contains(e.target));
+    if (!touchVerticalScrollArea && !touchHorizontalScrollArea) {
       e.preventDefault();
     }
-    const newTouchY = e.changedTouches[0].clientY;
-    this.navigate(this.state.prevPageIndex, newTouchY - this.startTouchY);
+
+    this.navigate(this.state.prevPageIndex, e.changedTouches[0].clientY - this.startTouchY);
   }
 
   handleTouchEnd() {
@@ -90,12 +95,38 @@ export default class App extends Component {
   }
 
   handleNavigatorClick() {
+    this.setState({ catalogExpand: false });
     this.navigate(this.state.prevPageIndex + 1);
+  }
+
+  handleCatalogClick(index) {
+    this.navigate(index);
+  }
+
+  handleCatalogButtonClick() {
+    this.setState({ catalogExpand: !this.state.catalogExpand });
   }
 
   updatePageIndex() {
     this.setState({ curPageIndex: this.state.prevPageIndex });
     location.hash = `#${this.state.curPageIndex}`;
+  }
+
+  getCatalogData() {
+    let dialogueIndex = 0;
+    return this.metaData.map((data) => {
+      if (data.class1) {
+        return data.class2 ? data.class1 + data.class2 : data.class1;
+      } else if (data.slideType === "dialogue") {
+        return `台词${++dialogueIndex}`;
+      } else if (data.slideType === "cover") {
+        return "开篇";
+      } else if (data.slideType === "epilogue") {
+        return "结束页";
+      } else {
+        return "";
+      }
+    });
   }
 
   render() {
@@ -105,7 +136,13 @@ export default class App extends Component {
     return (
       <div>
         <div className="root">
-          <Header isMobile={this.isMobile}/>
+          <Header isMobile={this.isMobile}
+                  metaData={this.getCatalogData()}
+                  pageIndex={this.state.prevPageIndex}
+                  catalogExpand={this.state.catalogExpand}
+                  handleCatalogClick={this.handleCatalogClick}
+                  handleCatalogButtonClick={this.handleCatalogButtonClick}
+          />
           <Slider isMobile={this.isMobile}
                   metaData={metaData}
                   pageIndex={this.state.prevPageIndex}

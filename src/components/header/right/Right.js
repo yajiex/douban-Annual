@@ -1,4 +1,5 @@
 import React from 'react';
+import Catalog from './catalog/Catalog';
 import './Right.css';
 import music from './p2694025_64k.mp4';
 
@@ -17,9 +18,19 @@ const Right = (props) => {
     <div className="header-right">
       {musicPart}
       <aside className="header-right-catalog">
-        <button>
+        <button className={props.catalogExpand ? "catalog-expand" : ""}
+                onClick={props.handleCatalogButtonClick}
+        >
           <div className="icon-doulist">目录</div>
         </button>
+        {
+          props.catalogExpand ? (
+              <Catalog metaData={props.metaData}
+                       pageIndex={props.pageIndex}
+                       handleCatalogClick={props.handleCatalogClick}
+              />
+            ) : null
+        }
       </aside>
     </div>
   );
