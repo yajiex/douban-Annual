@@ -7,6 +7,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/1.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/1.jpg`,
     "categoryBGColor": "rgba(97, 83, 64, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -85,6 +86,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/2.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/2.jpg`,
     "categoryBGColor": "rgba(67, 91, 52, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -161,6 +163,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/3.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/3.jpg`,
     "dialogueWords": "如果你深爱一个人，你会为他挡下全世界的子弹。",
     "dialogueLink": "https://movie.douban.com/subject/26614893/",
     "dialogueSource": "完美陌生人"
@@ -170,6 +173,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/4.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/4.jpg`,
     "categoryBGColor": "rgba(217, 81, 53, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016最受关注的",
@@ -249,6 +253,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/5.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/5.jpg`,
     "categoryBGColor": "rgba(19, 56, 122, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016最受关注的",
@@ -325,6 +330,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/6.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/6.jpg`,
     "dialogueWords": "这感觉其实挺奇怪的，有人来表扬你这辈子最惨的一天。",
     "dialogueLink": "https://movie.douban.com/subject/25983044/",
     "dialogueSource": "比利·林恩的中场战事"
@@ -334,6 +340,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/7.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/7.jpg`,
     "categoryBGColor": "rgba(237, 171, 50, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016年度",
@@ -410,6 +417,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/8.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/8.jpg`,
     "categoryBGColor": "rgba(13, 118, 183, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016年度",
@@ -486,6 +494,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/9.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/9.jpg`,
     "dialogueWords": "永远保持真诚，保持高尚的品行。把每天过成你的最后一天，活得充实、不留遗憾，有冒险精神、要英勇，但也要尽情享受，因为人生本短。",
     "dialogueLink": "https://movie.douban.com/subject/25834735/",
     "dialogueSource": "神奇队长"
@@ -495,6 +504,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/10.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/10.jpg`,
     "categoryBGColor": "rgba(5, 99, 154, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -574,6 +584,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/11.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/11.jpg`,
     "categoryBGColor": "rgba(85, 143, 102, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -653,6 +664,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/12.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/12.jpg`,
     "categoryBGColor": "rgba(99, 199, 239, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -732,6 +744,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/13.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/3.jpg`,
     "categoryBGColor": "rgba(87, 121, 123, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016年度",
@@ -808,6 +821,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/14.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/14.jpg`,
     "dialogueWords": "你是我最好的朋友，我恨过你，但我也只有你。",
     "dialogueLink": "https://movie.douban.com/subject/25827935/",
     "dialogueSource": "七月与安生"
@@ -817,6 +831,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/15.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/15.jpg`,
     "categoryBGColor": "rgba(130, 59, 83, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -896,6 +911,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/16.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/16.jpg`,
     "categoryBGColor": "rgba(1, 82, 160, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -975,6 +991,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/17.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/17.jpg`,
     "categoryBGColor": "rgba(109, 25, 64, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -1054,6 +1071,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/18.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/18.jpg`,
     "categoryBGColor": "rgba(25, 64, 72, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -1130,6 +1148,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/19.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/19.jpg`,
     "dialogueWords": "真正的忘记是不需要努力的。",
     "dialogueLink": "https://movie.douban.com/subject/5045678/",
     "dialogueSource": "大鱼海棠"
@@ -1139,6 +1158,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/20.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/20.jpg`,
     "categoryBGColor": "rgba(81, 123, 57, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -1218,6 +1238,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/21.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/21.jpg`,
     "categoryBGColor": "rgba(113, 86, 55, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -1297,6 +1318,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/22.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/22.jpg`,
     "categoryBGColor": "rgba(219, 151, 66, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -1373,6 +1395,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/23.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/23.jpg`,
     "dialogueWords": "不要计划相遇，最美好的事情总是偶然发生的。",
     "dialogueLink": "https://movie.douban.com/subject/11524967/",
     "dialogueSource": "海底总动员2：多莉去哪儿"
@@ -1382,6 +1405,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/24.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/24.jpg`,
     "categoryBGColor": "rgba(87, 199, 206, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -1460,6 +1484,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/25.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/25.jpg`,
     "categoryBGColor": "rgba(48, 101, 189, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -1539,6 +1564,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/26.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/26.jpg`,
     "categoryBGColor": "rgba(130, 79, 86, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -1615,6 +1641,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/27.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/27.jpg`,
     "dialogueWords": "有些人选择看到这个世界上的丑恶，那些无秩序的混乱。我选择看到美好。",
     "dialogueLink": "https://movie.douban.com/subject/2338055/",
     "dialogueSource": "西部世界 第一季"
@@ -1624,6 +1651,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/28.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/28.jpg`,
     "categoryBGColor": "rgba(222, 88, 108, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -1703,6 +1731,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/29.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/29.jpg`,
     "categoryBGColor": "rgba(207, 10, 25, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -1781,6 +1810,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/30.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/30.jpg`,
     "categoryBGColor": "rgba(130, 63, 134, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -1857,6 +1887,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/31.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/31.jpg`,
     "dialogueWords": "人如果不知道自己身处在何处，是无法前进的。",
     "dialogueLink": "https://movie.douban.com/subject/26602304/",
     "dialogueSource": "重版出来！"
@@ -1866,6 +1897,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/32.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/32.jpg`,
     "categoryBGColor": "rgba(58, 111, 56, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016最受关注的",
@@ -1944,6 +1976,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/33.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/33.jpg`,
     "categoryBGColor": "rgba(173, 31, 197, 0.843137)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016最受关注的",
@@ -2022,6 +2055,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/34.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/34.jpg`,
     "categoryBGColor": "rgba(130, 72, 44, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -2101,6 +2135,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/35.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/35.jpg`,
     "categoryBGColor": "rgba(67, 110, 24, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016评分最高的",
@@ -2177,6 +2212,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/36.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/36.jpg`,
     "dialogueWords": "爱到最后，要么伤人，要么受伤。有什么意义呢？",
     "dialogueLink": "https://movie.douban.com/subject/26581673/",
     "dialogueSource": "马男波杰克 第三季"
@@ -2186,6 +2222,7 @@ const metaData = () => ({
     "sectionBGColor": "rgba(255, 255, 255, 0.298039)",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/37.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/37.jpg`,
     "categoryBGColor": "rgba(59, 79, 92, 0.8)",
     "winnerBGColor": "rgba(59, 79, 92, 0.8)",
     "class1": "2016最受关注的",
@@ -2258,6 +2295,7 @@ const metaData = () => ({
     "sectionBGColor": "rgba(194, 192, 197, 0.8)",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/38.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/38.jpg`,
     "categoryBGColor": "rgba(75, 66, 74, 0.8)",
     "winnerBGColor": "rgba(75, 66, 74, 0.8)",
     "class1": "2016最受关注的",
@@ -2330,6 +2368,7 @@ const metaData = () => ({
     "sectionBGColor": "rgba(211, 211, 209, 0.8)",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/39.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/39.jpg`,
     "categoryBGColor": "rgba(131, 131, 121, 0.8)",
     "winnerBGColor": "rgba(131, 131, 121, 0.8)",
     "class1": "2016最受关注的",
@@ -2462,13 +2501,13 @@ const metaData = () => ({
       "title": "演员",
       "age": "83岁"
     }],
-    "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/40.jpg`
   }, {
     "slideType": "section",
     "isPeopleSection": false,
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/41.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/41.jpg`,
     "categoryBGColor": "rgba(78, 58, 39, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "1月最热门电影",
@@ -2517,6 +2556,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/42.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/42.jpg`,
     "categoryBGColor": "rgba(221, 179, 54, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2月最热门电影",
@@ -2564,6 +2604,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/43.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/43.jpg`,
     "categoryBGColor": "rgba(15, 52, 105, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "3月最热门电影",
@@ -2609,6 +2650,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/44.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/44.jpg`,
     "dialogueWords": "为你的悲伤而快乐，那就是爱的感觉，悲喜交加。",
     "dialogueLink": "https://movie.douban.com/subject/25855071/",
     "dialogueSource": "初恋这首情歌"
@@ -2618,6 +2660,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/45.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/45.jpg`,
     "categoryBGColor": "rgba(199, 155, 53, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "4月最热门电影",
@@ -2666,6 +2709,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/46.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/46.jpg`,
     "categoryBGColor": "rgba(156, 72, 61, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "5月最热门电影",
@@ -2714,6 +2758,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/47.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/47.jpg`,
     "categoryBGColor": "rgba(18, 137, 217, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "6月最热门电影",
@@ -2759,6 +2804,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/48.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/48.jpg`,
     "dialogueWords": "当我的光曝在你身上，重逢就是一间暗室。",
     "dialogueLink": "https://movie.douban.com/subject/26337866/",
     "dialogueSource": "路边野餐"
@@ -2768,6 +2814,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/49.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/49.jpg`,
     "categoryBGColor": "rgba(19, 154, 115, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "7月最热门电影",
@@ -2815,6 +2862,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/50.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/50.jpg`,
     "categoryBGColor": "rgba(33, 145, 183, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "8月最热门电影",
@@ -2862,6 +2910,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/51.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/51.jpg`,
     "categoryBGColor": "rgba(179, 73, 63, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "9月最热门电影",
@@ -2907,6 +2956,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/52.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/52.jpg`,
     "dialogueWords": "我们觉得她是小白菜，她前夫说她是潘金莲，她自己觉得自己冤得像窦娥，这三个妇女，单拎出来一个都不好对付，三个难缠的人缠在一起，都变成三头六臂了。",
     "dialogueLink": "https://movie.douban.com/subject/26630781/",
     "dialogueSource": "我不是潘金莲"
@@ -2916,6 +2966,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/53.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/53.jpg`,
     "categoryBGColor": "rgba(43, 95, 72, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "10月最热门电影",
@@ -2963,6 +3014,8 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/54.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/54.jpg`,
+
     "categoryBGColor": "rgba(138, 31, 51, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "11月最热门电影",
@@ -3011,6 +3064,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/55.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/55.jpg`,
     "categoryBGColor": "rgba(6, 161, 223, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "12月最热门电影",
@@ -3056,6 +3110,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/56.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/56.jpg`,
     "dialogueWords": "世界上最好的魔法学校是霍格沃茨。",
     "dialogueLink": "https://movie.douban.com/subject/25726614/",
     "dialogueSource": "神奇动物在哪里"
@@ -3065,6 +3120,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/57.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/57.jpg`,
     "categoryBGColor": "rgba(150, 86, 40, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016上映",
@@ -3144,6 +3200,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/58.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/58.jpg`,
     "categoryBGColor": "rgba(145, 81, 167, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016上映",
@@ -3223,6 +3280,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/59.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/59.jpg`,
     "categoryBGColor": "rgba(27, 204, 175, 0.843137)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016上映",
@@ -3299,6 +3357,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/60.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/60.jpg`,
     "dialogueWords": "所谓幸福，都必须放弃一些东西后才能得到。",
     "dialogueLink": "https://movie.douban.com/subject/26694988/",
     "dialogueSource": "比海更深"
@@ -3308,6 +3367,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/61.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/61.jpg`,
     "categoryBGColor": "rgba(95, 105, 72, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016上映",
@@ -3387,6 +3447,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/62.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/62.jpg`,
     "categoryBGColor": "rgba(154, 107, 81, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016上映",
@@ -3463,6 +3524,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/63.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/63.jpg`,
     "dialogueWords": "当你的生活变成一坨屎的时候，通常都是因为你当时做的傻逼决定。",
     "dialogueLink": "https://movie.douban.com/subject/3718279/",
     "dialogueSource": "死侍"
@@ -3472,6 +3534,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/64.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/64.jpg`,
     "categoryBGColor": "rgba(121, 89, 32, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016开播",
@@ -3550,6 +3613,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/65.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/65.jpg`,
     "categoryBGColor": "rgba(233, 130, 75, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016开播",
@@ -3629,6 +3693,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/66.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/66.jpg`,
     "categoryBGColor": "rgba(197, 143, 46, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016开播",
@@ -3674,6 +3739,7 @@ const metaData = () => ({
   }, {
     "slideType": "dialogue",
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/67.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/67.jpg`,
     "dialogueWords": "过去的如果就这么过去了，以后只会越来越糟。",
     "dialogueLink": "https://movie.douban.com/subject/25921812/",
     "dialogueSource": "驴得水"
@@ -3683,6 +3749,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": false,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/68.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/68.jpg`,
     "categoryBGColor": "rgba(21, 94, 92, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2017最值得期待的",
@@ -3760,6 +3827,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/69.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/69.jpg`,
     "categoryBGColor": "rgba(138, 82, 82, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2017最值得期待的",
@@ -3838,6 +3906,7 @@ const metaData = () => ({
     "sectionBGColor": "transparent",
     "isReverse": true,
     "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/70.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/70.jpg`,
     "categoryBGColor": "rgba(239, 204, 17, 0.8)",
     "winnerBGColor": "rgba(0, 0, 0, 0.498039)",
     "class1": "2016-2017北美",
@@ -3911,7 +3980,11 @@ const metaData = () => ({
       "link": "https://movie.douban.com/subject/4849728/",
       "posterLink": `${process.env.PUBLIC_URL}/assets/candidates/70/10.jpg`
     }]
-  }, { "slideType": "epilogue", "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/71.jpg` }]
+  }, {
+    "slideType": "epilogue",
+    "bgImage": `${process.env.PUBLIC_URL}/assets/backgrounds/71.jpg`,
+    "bgImageMobile": `${process.env.PUBLIC_URL}/assets/backgrounds/mobile/71.jpg`
+  }]
 });
 
 export default metaData;

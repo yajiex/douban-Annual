@@ -58,7 +58,7 @@ export default class Slide extends React.Component {
 
     let bgImage = "";
     if (this.props.slideType === "section" || this.props.slideType === "dialogue" || this.props.slideType === "epilogue") {
-      bgImage = `url(${this.props.bgImage})`;
+      bgImage = `url(${this.props.isMobile ? this.props.bgImageMobile : this.props.bgImage})`;
     } else if (this.props.slideType === "cover" && this.props.isMobile) {
       bgImage = `url(${videoBGImage})`;
     }
