@@ -32,6 +32,6 @@ https://doubanannual.oldoldb.com
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-## Acknowledgments
+## Acknowledgements
 
 * Thanks [douban](https://www.douban.com/) for the great annual summary.
